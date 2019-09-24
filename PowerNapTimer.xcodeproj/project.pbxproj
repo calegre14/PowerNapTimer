@@ -8,20 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		28A66C86233A73560072772E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A66C85233A73560072772E /* AppDelegate.swift */; };
-		28A66C88233A73560072772E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A66C87233A73560072772E /* ViewController.swift */; };
 		28A66C8B233A73560072772E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A66C89233A73560072772E /* Main.storyboard */; };
 		28A66C8D233A73570072772E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28A66C8C233A73570072772E /* Assets.xcassets */; };
 		28A66C90233A73570072772E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28A66C8E233A73570072772E /* LaunchScreen.storyboard */; };
+		28A66C9C233A771A0072772E /* TimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28A66C9B233A771A0072772E /* TimerController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		28A66C82233A73560072772E /* PowerNapTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PowerNapTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28A66C85233A73560072772E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		28A66C87233A73560072772E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		28A66C8A233A73560072772E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		28A66C8C233A73570072772E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28A66C8F233A73570072772E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28A66C91233A73570072772E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28A66C9B233A771A0072772E /* TimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +54,7 @@
 		28A66C84233A73560072772E /* PowerNapTimer */ = {
 			isa = PBXGroup;
 			children = (
-				28A66C87233A73560072772E /* ViewController.swift */,
+				28A66C9D233A77250072772E /* Controllers */,
 				28A66C99233A74F30072772E /* Views */,
 				28A66C98233A74DF0072772E /* Resources */,
 			);
@@ -75,9 +75,41 @@
 		28A66C99233A74F30072772E /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				28A66C89233A73560072772E /* Main.storyboard */,
+				28A66C9A233A76730072772E /* Storyboards */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		28A66C9A233A76730072772E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				28A66C89233A73560072772E /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		28A66C9D233A77250072772E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				28A66C9F233A79A70072772E /* ViewController */,
+				28A66C9E233A772D0072772E /* ModelControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		28A66C9E233A772D0072772E /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				28A66C9B233A771A0072772E /* TimerController.swift */,
+			);
+			path = ModelControllers;
+			sourceTree = "<group>";
+		};
+		28A66C9F233A79A70072772E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,8 +183,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28A66C88233A73560072772E /* ViewController.swift in Sources */,
 				28A66C86233A73560072772E /* AppDelegate.swift in Sources */,
+				28A66C9C233A771A0072772E /* TimerController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +332,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5XC6N4RBRH;
-				INFOPLIST_FILE = PowerNapTimer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PowerNapTimer/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,7 +350,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5XC6N4RBRH;
-				INFOPLIST_FILE = PowerNapTimer/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/PowerNapTimer/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
