@@ -54,14 +54,30 @@
 		28A66C84233A73560072772E /* PowerNapTimer */ = {
 			isa = PBXGroup;
 			children = (
-				28A66C85233A73560072772E /* AppDelegate.swift */,
 				28A66C87233A73560072772E /* ViewController.swift */,
-				28A66C89233A73560072772E /* Main.storyboard */,
+				28A66C99233A74F30072772E /* Views */,
+				28A66C98233A74DF0072772E /* Resources */,
+			);
+			path = PowerNapTimer;
+			sourceTree = "<group>";
+		};
+		28A66C98233A74DF0072772E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				28A66C85233A73560072772E /* AppDelegate.swift */,
 				28A66C8C233A73570072772E /* Assets.xcassets */,
 				28A66C8E233A73570072772E /* LaunchScreen.storyboard */,
 				28A66C91233A73570072772E /* Info.plist */,
 			);
-			path = PowerNapTimer;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		28A66C99233A74F30072772E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				28A66C89233A73560072772E /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
